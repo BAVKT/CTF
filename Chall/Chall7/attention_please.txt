@@ -1,0 +1,13 @@
+-7-
+Nom :	 Attention please
+Flag :   Erreur_classique:/
+Points : 125
+Catég :  Stéganographie
+
+### Énoncé
+
+Une vidéo de présentation d'un des robot Keylo, on peut surement trouver des détails intéressants !
+
+### Doc
+
+[Lumos](https://bit.ly/2z302BT) 

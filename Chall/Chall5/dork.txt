@@ -1,0 +1,22 @@
+-5-
+Nom :	 Google Dork
+Flag :   Rapaport - intitle:"index of" site:https://cse.buffalo.edu/ intext:password	
+Points : 250
+Catég :  Autre
+
+### Énoncé
+
+Tu penses savoir utiliser Google ?  
+  
+Le flag de ce challenge est un mot de passe.  
+Il se trouve à la dernière ligne d'un fichier contenant "password"  
+Lui même situé à "l'index of" du site https://cse.buffalo.edu/  
+
+### Tips
+
+Le username rattaché à ce password est "Bill".  
+
+### Doc
+
+[C koi 1 dork ?](https://bit.ly/2Kh1c1P)  
+[Cé koa 1 index ?](http://bfy.tw/Ip8G)

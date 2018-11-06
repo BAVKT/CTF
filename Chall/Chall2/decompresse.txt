@@ -1,0 +1,20 @@
+-2-
+Nom :	Décompresse
+Flag : 	Je_Suis_Bien_Detendu_Maintenant
+Points : 150
+Catég :  Shell
+
+### Énoncé
+
+La vie est pas toujours simple.  
+Comme on pense aussi à votre santé, voici un challenge qui va vous permettre de décompresser un peu.  
+
+### Tips
+
+Juste besoin de commandes shell vraiment basique.
+Si tu te prends la tête, c'est que t'es parti en sucette.  
+
+### Doc
+
+[Decompression](https://tinyurl.com/n7ohhf5)  
+[Archives types](https://bit.ly/2JSrS8m)  

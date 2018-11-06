@@ -1,0 +1,26 @@
+#####################################
+# Instructions déploiement site SQL #
+#####################################
+
+Instructions pour le déploiement des challenges d'injections SQL "inject" et "heroin-like".
+Créer un site à part est necessaire pour ces challenges, pour des raisons de sécurité mais aussi car cela risque d'être assez complexe à installer sur le docker du CTF. Les pages php ne vérifient pas la légitimité des requètes ce qui permet d'y éxecuter des injections SQL et récupérer le contenu des tables.
+
+- Décompresser le fichier sql.tar
+
+- Déployer un serveur web (Apache, Php, Mysql, mysqli) - Utilisation de xampp ou lampp.
+
+- Supprimer le fichier index.php situé à la racine du serveur web (si il existe).
+
+- Créer un dossier "inject" dans le dossier du serveur web (Exemples : /var/www/html - /opt/lampp/htdocs).
+	Y ajouter les fichiers .php situés dans 11-inject
+
+- Créer un dossier "heroin-like" dans le dossier du serveur web.
+	Y ajouter les fichiers .php situés dans 13-heroin-like
+
+Dans phpmyadmin :
+	importer -> 11-inject/db_script.sql
+	importer -> 13-heroin-like/db_script.sql
+
+Le sites doit etre accessible via URL et lister les deux dossiers contenant les sites (inject et heroin-like).
+/!\ Dans les deux cas, l'utilisateur doit avoir un accès en lecture seule à la DataBase. /!\
+

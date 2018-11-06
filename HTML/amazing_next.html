@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+  $(function() {
+    var xhr = $.get("http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC");
+    xhr.done(function(data) { 
+      $('.gif-bg').css('background-image', 'url(' + data.data.image_url + ')');
+    });
+  });
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .gif-bg {
+      background:url('') no-repeat center center;	
+      width:30%; 
+      height:30%;
+      min-height:30%; /* for mobile and tablets */
+      background-size:cover;	
+      padding: 25px;
+      position:absolute
+    }
+  </style>
+</head>
+<body>
+<br />
+<br />
+<h1>YOU FAILED</h1>
+<p> Pour te consoler de ton terrible échec, voici un gif random.</p>
+<br />
+<div class="gif-bg", width="200px", height="200px">
+</div>
+
+</body>
+</html>
+
+
+
+<!-- DEUXIEME GENERATEUR DE GIFS-->
+<body>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+$(document).ready(function(){
+  $("#new").click(function() {
+    var imgSrc;
+    var imgId;
+    $.ajax ({
+      url: "//api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=fail",
+      type: "GET",
+      dataType: "json",
+      success: function(response) {
+        imgSrc = response.data.image_url;
+        imgId = response.data.id;
+        console.log(response);
+        $("#giphy-embed").attr("src", "https://giphy.com/embed/"+imgSrc);
+        $("#tweetButton").attr("href", "https://giphy.com/gifs/"+imgId+"/tweet")
+        return false;
+      }, 
+      error: function(e) {
+        console.log("uh oh");
+        }
+      });
+  });
+});
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .gif-bg {
+      background:url('') no-repeat center center; 
+      width:30%; 
+      height:30%;
+      min-height:30%; /* for mobile and tablets */
+      background-size:cover;  
+      padding: 25px;
+      position:absolute
+    }
+  </style>
+<br />
+<br />
+<h1>YOU FAILED</h1>
+<p> Pour te consoler de ton terrible échec, voici un gif random.</p>
+<br />
+<iframe src="https://giphy.com/embed/26FmRLBRZfpMNwWdy" id="giphy-embed" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head></head>
+<!-- Put link to Font Awesome in "Stuff for <head>" under Settings -->
+
+<body>
+    <script>
+$(document).ready(function(){
+  $("#new").click(function() {
+    var imgSrc;
+    var imgId;
+    $.ajax ({
+      url: "//api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=fail",
+      type: "GET",
+      dataType: "json",
+      success: function(response) {
+        imgSrc = response.data.image_url;
+        imgId = response.data.id;
+        console.log(response);
+        $("#giphy-embed").attr("src", "https://giphy.com/embed/"+imgSrc);
+        $("#tweetButton").attr("href", "https://giphy.com/gifs/"+imgId+"/tweet")
+        return false;
+      }, 
+      error: function(e) {
+        console.log("uh oh");
+        }
+      });
+  });
+});
+  </script>
+  <style type="text/css">
+body {
+  background-image: url("http://www.adoptastray.com/wp-content/uploads/2014/07/paws2.jpg");
+}
+
+.page-header {
+  text-align: center;
+  color: white;
+  padding-top: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.gif-space {
+  padding: 20px;
+}
+.gif-item {
+/*   why isn't this working? Trying to change div heigh to always be visible  */
+  margin: 0 auto;
+  padding: 4em;
+/*   position: fixed;
+  top: 50%;
+  left: 50%; */
+}
+
+iframe {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.iframe {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1px;
+}
+
+
+/* ---start stlying for smaller screens--- */
+@media (max-width: 767px) {
+  .page-header h1 {
+    font-size: 2.5em;
+  }
+
+} 
+/* end @media */
+  </style>
+  <div class="page-header">
+    <h1>Random Doggo Generator</h1>
+  </div>
+  <div class="container">
+    <div class="gif-space">
+      <div class="gif-item">
+        <div class="iframe">
+          <iframe src="https://giphy.com/embed/26FmRLBRZfpMNwWdy" id="giphy-embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<style type="text/css">
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#grad1
+{
+    background: red;
+    background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+</style>
+
+<h1 id="grad1">CONGRATULATIONS ! YOU DID IT !!!</h1>
+<img id=".center" src="https://i0.wp.com/blog.eyewire.org/wp-content/uploads/2014/07/doge.jpg" />
+<br />
+<-- Flag -->
+<br />
+S-zone_better_than_friendzone
+<br />
+<-- Flag -->
+</body>
+</html>

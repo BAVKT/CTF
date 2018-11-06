@@ -1,0 +1,31 @@
+
+-13-
+Nom :    Heroin-like
+Flag :   CFLAG{::InjectionSQL@@localH0ST::()}
+Points : 300
+Catég :  Web
+
+### Énoncé
+
+Comme maintenant t'es un professionnel, je pense que tu peux tenter le deuxième site.  
+
+### Tips
+
+C'est PRESQUE la même faille que sur le premier site.  
+
+
+### Doc
+
+[How to basic](https://bit.ly/2OmG63y)
+
+
+
+
+
+
+NEED:
+sudo apt-get update
+sudo apt-get install php
+sudo apt-get install apache2
+sudo apt-get install php-mysqli
+sudo systemctl status apache2

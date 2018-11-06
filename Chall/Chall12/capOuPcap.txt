@@ -1,0 +1,18 @@
+-11-
+Nom :    Cap ou pcap ?
+Flag :   1a349dcc540a3978584510d982075f838b17cd6d
+Points : 400
+Catég :  Réseau
+
+### Énoncé
+
+On avance ! J'ai sniffé le traffic réseau d'un des groupes concurrent, alors qu'ils étaient en train de résoudre une des épreuve !!! Tu sais ce que ça veut dire ? Eh oui, on a peut-être intercepté le flag !
+
+
+Alors, cap ou pacap ?
+
+
+### Tips
+
+
+### Doc

@@ -1,0 +1,235 @@
+<!--    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://www.wyca-solutions.com/_bizet_/css/bootstrap.css" rel="stylesheet">
+    <link href="https://www.wyca-solutions.com/_bizet_/css/bootstrap-switch.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700&#038;subset=latin&#038;ver=1455269554' type='text/css' media='all' rel='stylesheet' id='anaglyph-google-fonts-anaglyph_config-css' />
+  <link href="https://www.wyca-solutions.com/_bizet_/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://www.wyca-solutions.com/_bizet_/css/prism.css" rel="stylesheet">
+  <link href="https://www.wyca-solutions.com/_bizet_/css/custom.css" rel="stylesheet">
+-->
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<style type="text/css">
+    h1 {
+      font-family: 'Lato', 'LatoOffline', sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+    h4 {
+      font-family: 'Lato', 'LatoOffline', sans-serif;
+      color: black;
+      font-weight: bold;
+    }
+    .li, th{
+      font-family: courier;
+      font-size: 24;
+    }
+    code {
+      font-color: red;
+    }
+</style>
+
+  <h1>Documentation API Robot / Caméra</h1>
+<br />
+  <h4>Ajouter les fichiers JS à vos pages web</h4>
+    <div class="alert alert-secondary">
+    <pre class="line-numbers"><code class="language-html">&lt;!DOCTYPE html>
+&lt;html>
+    &lt;head>
+      ...
+        &lt;script src="/robot_id.js">&lt;/script>
+        &lt;script src="https://www.wyca-solutions.com/_bizet_/api_js/extern/roslib.js">&lt;/script>
+        &lt;script src="/jquery-1.11.3.min.js">&lt;/script>
+        &lt;script src="https://www.wyca-solutions.com/_bizet_/api_js/wyca_bizet_api_v2.latest.js">&lt;/script>
+        ...
+    &lt;/head>
+    &lt;body>
+        ...
+    &lt;/body>
+&lt;/html></code></pre>
+</div>
+<br />
+<div class="alert alert-danger">
+    <b>Note concernant le fichier robot_id.js: </b> 
+    Ce fichier contient les informations ci-dessous et permet de simplifier la portabilité du code sur les différents robots lors du IPIKATHON:
+    <ul>
+      <li><code>var api_key = [API_KEY]</code></li>
+      <li><code>var id_site = [ID_SITE]</code></li>
+      <li><code>var id_robot = [ID_ROBOT]</code></li>
+      <li><code>var host = [HOST]</code></li>
+      <li><code>var camera_id = [CAMERA_ID]</code></li>
+    </ul>
+</div>
+<br />
+<hr />
+<br />
+  <h4>Initialisation de l'API</h4>
+    <div class="tabs">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a data-toggle="tab" href="#init_api_js">Javascript|</a></li>
+          <li role="presentation"><a data-toggle="tab" href="#init_api_params"> Paramètres</a></li>
+        </ul>
+            
+        <div class="tab-content">
+          <div class="tab-pane active" id="init_api_js" role="tabpanel">
+              <div class="alert alert-secondary">
+                <pre class="line-numbers"><code class="language-js">$(document).ready(function(e) {
+                   wycaApi = new WycaAPI({
+                      api_key,
+                      id_site,
+                      id_robot,
+                      host,
+                  });
+                  wycaApi.init();
+               });
+    </code></pre>
+          </div>
+          </div>
+          <div class="tab-pane" id="init_api_params" role="tabpanel" style="padding:20px;">
+            Les paramètres <b>api_key, id_site, id_robot</b> et <b>host</b> de l'API sont automatiquement remplis avec les informations contenues dans le fichier <b>robot_id.js</b> importé en début de page.
+          </div>
+    </div>
+<br />
+<hr />
+<br />
+  <h1 id="locker">Distributeur de cadenas</h1>
+    <h4 id="locker_events">Evenements</h4>
+    
+    <div class="alert alert-light">
+      <div class="panel-heading" id="locker_events_onNbLocker">onNbLocker</div>
+          <div class="alert alert-secondary">
+            <pre class="line-numbers"><code class="language-js">$(document).ready(function(e) {
+    wycaApi = new WycaAPI({
+        ...
+        onNbLocker: function (nb_cadena) {
+            console.log(nb_cadena)    /* Le nombre de cadenas dans le robot */
+        }
+    });
+ });</code></pre>
+           </div>
+       </div>
+       
+   
+    <h4 id="locker_functions">Fonctions</h4>
+    
+    
+   <div class="alert alert-light">
+      <div class="panel-heading" id="locker_function_LockerDistribute">LockerDistribute</div>
+          <div class="alert alert-secondary">
+            <pre class="line-numbers"><code class="language-js">$(document).ready(function(e) {
+    wycaApi = new WycaAPI({
+        ...
+    });
+    
+    /* Distribuer un cadena */
+    wycaApi.LockerDistribute();
+    
+ });</code></pre>
+           </div>
+       </div>
+    
+   <div class="alert alert-light">
+      <div class="panel-heading" id="locker_function_LockerSetCount">LockerSetCount</div>
+          <div class="alert alert-secondary">
+            <pre class="line-numbers"><code class="language-js">$(document).ready(function(e) {
+    wycaApi = new WycaAPI({
+        ...
+    });
+    
+    /* Défini le nombre de cadenas contenus dans le robot */
+    wycaApi.LockerSetCount(nb); /* nb : le nombre de cadenas dans le robot */
+    
+ });</code></pre>
+           </div>
+       </div>
+    
+   <div class="alert alert-light">
+      <div class="panel-heading" id="locker_function_LockerGetCount">LockerGetCount</div>
+          <div class="alert alert-secondary">
+            <pre class="line-numbers"><code class="language-js">$(document).ready(function(e) {
+    wycaApi = new WycaAPI({
+        ...
+    });
+    
+    /* Donne le nombre de cadenas contenus dans le robot */
+    wycaApi.LockerGetCount();
+    
+ });</code></pre>
+           </div>
+       </div>
+<br />
+<hr />
+<br />
+  <h1 id="keybox">Trappe magnétique à l'avant du robot</h1>
+<br />
+    <h4 id="keybox_events">Events</h4>
+    
+    <div class="alert alert-light">
+      <div class="panel-heading" id="keybox_events_onKeyboxIsDoorOpen">onKeyboxIsDoorOpen</div>
+          <div class="alert alert-secondary">
+            <pre class="line-numbers"><code class="language-js">$(document).ready(function(e) {
+    wycaApi = new WycaAPI({
+        ...
+        onKeyboxIsDoorOpen: function (is_door_open){
+            is_door_open    /* true si la porte est ouverte */
+        }
+    });
+ });</code></pre>
+           </div>
+       </div>
+    
+    <div class="alert alert-light">
+      <div class="panel-heading" id="keybox_events_onKeyboxIsMagnetOn">onKeyboxIsMagnetOn</div>
+          <div class="alert alert-secondary">
+            <pre class="line-numbers"><code class="language-js">$(document).ready(function(e) {
+    wycaApi = new WycaAPI({
+        ...
+        onKeyboxIsMagnetOn: function (is_magnet_on){
+            is_magnet_on    /* true si l'aimant est allumé, sinon faux(faux = la porte peut être ouverte) */
+        }
+    });
+ });</code></pre>
+           </div>
+       </div>
+   
+    <h4 id="keybox_functions">Fonctions</h4>
+    
+    
+   <div class="alert alert-light">
+      <div class="panel-heading" id="keybox_function_KeyboxGetData">KeyboxGetData</div>
+          <div class="alert alert-secondary">
+            <pre class="line-numbers"><code class="language-js">$(document).ready(function(e) {
+    wycaApi = new WycaAPI({
+        ...
+    });
+    
+    /* Donne l'état de la keybox */
+    wycaApi.KeyboxGetData(); /* Cet appel envoi l'évènement onKeyboxIsDoorOpen et onKeyboxIsMagnetOn */
+    
+ });</code></pre>
+           </div>
+       </div>
+    
+    
+   <div class="alert alert-light">
+      <div class="panel-heading" id="keybox_function_KeyboxSetMagnetState">KeyboxSetMagnetState</div>
+          <div class="alert alert-secondary">
+            <pre class="line-numbers"><code class="language-js">$(document).ready(function(e) {
+    wycaApi = new WycaAPI({
+        ...
+    });
+    
+    /* Récupérer l'état de la keybox */
+    wycaApi.KeyboxSetMagnetState(magnet_on); /* magnet_on, bool, true : active l'aimant, false : désactive l'aimant */
+    
+ });</code></pre>
+           </div>
+       </div>
+  </body>
+    
+      

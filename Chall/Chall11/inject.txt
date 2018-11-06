@@ -1,0 +1,20 @@
+
+-11-
+Nom :    Inject
+Flag :   CFLAG{Dont_Do_Drugz_Kids}
+Points : 200
+Catég :  Web
+
+### Énoncé
+
+J'ai remarqué qu'un serveur apache tournait en local sur ma machine, si j'ai bien compris, tu devrais avoir le même.
+Il y a un début de site dessus, peut-être qu'il y a quelque chose à en tirer !  
+
+### Tips
+
+Le titre c'est déjà un bon tips je pense.  
+
+
+### Doc
+
+[How to basic](https://bit.ly/2OmG63y)

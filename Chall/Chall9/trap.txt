@@ -1,0 +1,15 @@
+-9-
+- Marquer sur le papier de bien remettre le flag a sa place
+Nom :	 It's a trap
+Flag :   it_was_totally_a_trappe
+Points : 150
+Catég :  Web
+
+### Énoncé
+
+Selon une source presque sure, il y aurait des informations confidentielles cachées dans le robot.
+Je sais pas exactement comment faire pour les récupérer, mais si on teste toutes les options à notre disposition, on devrait finir par trouver !
+
+### Tips
+
+**Use the API.**

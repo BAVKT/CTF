@@ -1,0 +1,33 @@
+-4-
+Nom :    Force brute
+Flag :   21chroma35KEYLO - 49c01721ddaf97780dd335478b7c36e5
+Points : 350
+Catég :  Script
+
+### Énoncé
+
+J'ai réussi à subtiliser des informations !!  
+Après avoir trouvé un hash en fouillant un peu, j'ai essayé de soutirer des indices à son propriétaire.  
+Bon, j'ai pas réussi à récupérer directement son mot de passe mais il était  
+suffisamment émeché pour me donner des indices sur sa composition !  
+  
+On sait donc qu'il est composé dans l'ordre :  
+	- D'un chiffre compris entre 0 et 30  
+	- Du nom en minuscule d'une des zone terrestre habitable  
+	- De la température de fusion du chocolat en chiffres  
+	- Et enfin, le nom des robots en MAJUSCULE  
+
+Plus qu'à faire une wordlist et essayer !  
+
+### Tips
+
+Si t'as plus de 17 ans de ta vie à perdre, tu peux essayer de le cracker autrement qu'avec une wordlist que t'as généré. Bon chance.  
+
+
+### Doc
+
+[Base](http://bfy.tw/IoO9)  
+[Printable chars](https://tinyurl.com/y7gdm3ly)  
+[Dictionnaire d'attaque](https://bit.ly/2ttxBYB)  
+[Hashcat](https://bit.ly/2yFy1A7)  
+[John The Ripper](https://tinyurl.com/j91l)  

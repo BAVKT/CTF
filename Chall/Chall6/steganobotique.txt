@@ -1,0 +1,14 @@
+-6-
+Nom :	 Stéganobotique
+Flag :   Faut_Pas_Respirer_La_Compote
+Points : 125
+Catég :  Stéganographie
+
+### Énoncé
+
+Une magnifique photo d'un robot Keylo de toute dernière génération, customisé comme jamais.  
+Prend le temps de l'apprécier, après tout, on voit pas ça tous les jours.  
+
+### Doc
+
+[Lumos](https://bit.ly/2z302BT)  

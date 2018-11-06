@@ -1,0 +1,13 @@
+################################
+# Instructions déploiement CTF #
+################################
+
+Instructions pour le déploiement des challenges sur la machine docker des équipes.
+Le but est que les challenges soient accessibles directement sur le home de chaque team.
+
+
+- Copier le challenges.tar sur le home.
+
+	→ cp -r challenges.tar ~
+	→ cd
+	→ tar -xf challenges.tar

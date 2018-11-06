@@ -1,0 +1,252 @@
+<body>
+<style type="text/css">
+		h1 {
+			font-family: 'Lato', 'LatoOffline', sans-serif;
+			font-weight: bold;
+			text-align: center;
+		}
+		h2, h4 {
+			font-family: 'Lato', 'LatoOffline', sans-serif;
+			color: black;
+			font-weight: bold;
+		}
+		code {
+			color: red;
+		}
+		.p, .li, th{
+			font-family: courier;
+			font-size: 24;
+		}
+		.t1 {
+			width: 100%;
+		}
+		.th1 {
+			text-align: center;
+		}
+		.LIENS {
+			font-family: courier;
+			font-size: 24;
+			margin: auto;
+   			width: 50%;
+		}
+		#img1 {
+			display: inline;
+		}
+		#img3 {
+			display: inline;
+		}
+		#som {
+
+		}
+		.petit {
+			text-align: left;
+			font-size: 14;
+			font-family: courier;
+		}
+		p {
+			font-size: 24;
+		}
+</style>
+	<h1> Documentation </h1>
+<br />
+<br />
+	<p class="p">
+		Commençons par le commencement. L'Ipikathon, comme son nom l'indique, est un <a href="https://fr.wikipedia.org/wiki/Hackathon">hackathon</a>. Il est séparé en deux parties distinctes qui sont <a href="#CTF">la partie CTF</a> qui consiste en une suite de challenges à résoudre sur différentes technologies et <a href="#LOGICIEL">la partie logiciel</a> qui comprend la conception, la réalisation et le déploiement d'une <a href="https://fr.wikipedia.org/wiki/Interactions_homme-machine">IHM</a> sur un robot d'accueil.
+	</p>
+<br />
+	<p class="p">
+		La totalité des élèves est répartie de manière équitable entre 16 équipes et chaque équipe sera composée d'élèves venant des différentes filières de l'IPI ainsi que de 2 teamleaders pour favoriser la cohésion des groupes.
+	</p>
+<br />
+	<p class="p"> 
+		Vous devrez développer une interface graphique et aurez un temps d'accès au robot qui sera limité.
+	</p>
+<br id="SOMMAIRE"/>
+	<h2>Sommaire</h2>
+	<div id="som">
+	<ul>
+		<li class="li"><a href="#DEROULEMENT">Déroulement de la journée</a></li>
+		<li class="li"><a href="#CTF">Capture The Flag</a></li>
+		<li class="li"><a href="#FLAG">Les flags</a></li>
+		<li class="li"><a href="#LOGICIEL">Partie logiciel</a></li>
+		<li class="li"><a href="#NOTATION">Notation</a></li>
+		<li class="li"><a href="#SPEECH">Réaliser un pitch du projet</a></li>
+		<li class="li"><a href="#CONSEILS">Les conseils</a></li>
+		<li class="li"><a href="#LIENS">Les liens</a></li>
+	</ul>
+	</div>
+<br id="DEROULEMENT"/>
+	<h2>Déroulement de la journée</h2> 
+<br />
+	<table class="t1" border="1">
+		<tr><th class="th1"> Horaire </th>		<th> &nbsp;&nbsp;Activité</th></tr>
+		<tr></tr>
+		<tr><th class="th1"> 8h </th>			<th> &nbsp;&nbsp;Arrivée sur site Diagora </th></tr>
+		<tr><th class="th1"> 9h00 </th>			<th> &nbsp;&nbsp;Accueil / signature feuille de présence / petit déjeuner </th></tr>
+		<tr><th class="th1"> 9h30 </th>			<th> &nbsp;&nbsp;Accueil salle de conf </th></tr>
+		<tr><th class="th1"> 9h35 </th>			<th> &nbsp;&nbsp;Pitch sonore Ipikathon </th></tr>
+		<tr><th class="th1"> 9h40 </th>			<th> &nbsp;&nbsp;Présentation Ipikathon (présentation uses cases) </th></tr>	
+		<tr><th class="th1"> 10h05 </th>		<th> &nbsp;&nbsp;Démarrage de l'Ipikathon</th></tr>
+		<tr><th class="th1"> 12h30 </th>		<th> &nbsp;&nbsp;Déjeuner </th></tr>
+		<tr><th class="th1"> 13h30 -> 16h </th>	<th> &nbsp;&nbsp;suite de l’Ipikathon </th></tr>
+		<tr><th class="th1"> 16h -> 16h40 </th>	<th> &nbsp;&nbsp;Présentation des réalisations des 16 équipes; 4 minutes par équipe / sélection des 4 meilleures équipes</th></tr>
+		<tr><th class="th1"> 16h40 -> 16h55 </th><th> &nbsp;&nbsp;Finale en amphithéatre </th></tr>
+		<tr><th class="th1"> 16h55 -> 17h15 </th><th> &nbsp;&nbsp;Délibération des jurys </th></tr>
+		<tr><th class="th1"> 17h15 </th>		<th> &nbsp;&nbsp;Remise des prix et fin du hackathon</th></tr>
+	</table>
+<br />
+<br />
+<hr id="CTF" />
+<br />
+<br />
+<h2>Partie CTF</h2>
+<br />
+	<p class="p">Les <b>Capture The Flag</b> sont des jeux consistant à exploiter des vulnérabilités informatique de manière à récupérer des drapeaux (flag) représentant la preuve de l'intrusion.</p> 
+<br />
+	<p class="p">• Vous allez devoir réaliser des challenges sur différentes technologies/langages. <br />
+	• Chaque challenge rapporte un nombre de points dépendant de sa difficulté. <br />
+	• <b>Certains sont -obligatoires-.</b> Ils sont le minimum vital à accomplir pour pouvoir accéder physiquement au robot et pouvoir tester vos interfaces mais ne seront sûrement pas suffisants pour terminer premier ! <br />
+	Une fois ces challenges obligatoires terminés, vous en débloquerez de nouveaux, plus complexes.<br />
+	• Chaque challenge se valide par l'envoi du ou des <a href="#FLAG">flags</a> qui lui correspondent.</p>
+<br />
+	<p class="p"><b>Exemple de challenge : </b></p>
+<br />
+	<div class="text-center">
+		<img id="img1" src="/themes/ipi/static/img/doc/img1.png" style="margin-right: 10%;">
+    	<img id="img3" src="/themes/ipi/static/img/doc/img3.png">
+    </div>
+<br id="FLAG" />
+<br />
+<br />
+	<h4>Flags</h4>
+<br />
+	<p class="p">Les Flags sont une suite de caractères pré-générés. Ils sont sous la forme : 
+	<code>CFLAG{CCJsui1Flag}</code> ou <code>CFLAG{01e0b845a693187}</code> ou <code>Bjr_le_flag</code></p>
+<br />
+	<p class="p">Il s'agit là de votre nouveau but dans la vie.
+	Ils représentent la fin d'une épreuve mais aussi sa réussite ! L'essentiel du temps, c'est leur contenu entre accolades que vous devrez rentrer sur le site pour valider le challenge.
+	Dans certains cas, il n'y aura pas la mention <code>CFLAG{}</code> mais vous saurez quand même les reconnaître.
+	</p>
+<br />
+<br />
+<hr id="LOGICIEL" />
+<br />
+<br />
+<h2>Partie logiciel</h2>
+<br />
+<p class="p">Le robot keylo est un robot pourvu de nombreux capteurs (capteurs de proximité, caméras 3D, lidar…) lui permettant de se déplacer de manière autonome dans son environnement. Il a été initialement conçu pour distribuer des cadenas (via un distributeur intégré) dans les centres de self-stockage (gardes-meubles) afin de s’affranchir de la présence d’un agent d’accueil, dans un lieu où les passages sont peu fréquents.</p>
+<p class="p">Actuellement répartis dans les C-zone (Comfort-zones), vous allez devoir développer une application pour d’autres cas d’usages qui vous sont proposés et qui ont été choisis par vos team-leaders.</p>
+<p class="p">Pour ce faire, différentes informations sont à prendre en compte pour le développement, comme les caractéristiques matérielles du robot:</p>
+<ul>
+	<li class="li">Ecran tactile 24 pouces de résolution : 1080x1920 (portrait)														</li>
+	<li class="li">Un distributeur mécanique avec vis sans fin permettant de distribuer différents types d’objets						</li>
+	<li class="li">Une trappe sur l’avant du robot pilotée par un électro-aimant														</li>
+	<li class="li">Possibilité de piloter les déplacements du robot via une manette (xbox 360)											</li>
+	<li class="li">Une caméra frontale permettant d’enregistrer des messages vidéo / effectuer des appels vidéo / faire des photos ...	</li>
+	<li class="li">Le NUC (mini-ordinateur) présent sur le robot fonctionne sous Ubuntu 18.04											</li>
+</ul>
+
+<h4>Stratégie</h4>
+<p class="p">Un point essentiel et primordial à prendre en considération lors du développement est que le but premier est de développer une application visuelle permettant d’effectuer une démonstration de ce qu’il est possible de faire avec votre application – ceci sous-entends que toute action effectuée à l’écran peut ne pas avoir de d’action réelle mais tout simplement une action simulée (par exemple, l’enregistrement d’un message vidéo peut être simulé etc...).</p>
+
+<h4>Déploiement</h4>
+<p class="p">Le code développé devra être placé sur le compte github qui vous a été communiqué en début de journée dans le repository "ipikathon_2018".</p>
+<p class="p">La racine du repository "ipikathon_2018" devra contenir un fichier "index.php" qui sera la première page de votre IHM lancée automatiquement par le robot.</p>
+<p class="p font-weight-bold">Vous devrez venir voir un organisateur pour définir la plage horaire à laquelle vous souhaitez avoir accès au robot.</p>
+<p class="p">Pensez bien à venir réserver ce temps car ce sera sûrement la guerre des accès à la fin du hackathon.</p>
+<p class="p">Etant donné que vous disposez d'un temps limité, mieux vous serez organisé, plus vous augmenterez vos chances de pouvoir présenter quelque chose de construit à la fin.</p>
+<br />
+<br />
+<hr id="NOTATION" />
+<br />
+<br />
+<h2>Notation</h2>
+		<p class="p"><em>Vous serez noté sur (Faible 1, Bien 3, Très bien 5)</em></p>
+
+<br /><br />
+<p class="p"> <u><b>La qualité du code :</b></u>
+                <br />• Architecture
+                <br />• Code clair	
+                <br />• Commentaires de code
+            </p>
+<br />
+<p class="p"><u><b>La user expérience :</b></u>
+                <br />• Interface intuitive
+                <br />• Fluidité de l’interface
+                <br />• Responsivité
+                <br />• Ergonomie
+                <br />• Compréhension aisée des boutons d’orientation 
+                <br />• Qualité de l'outil de recherche indexant le contenu du site 
+                <br />• Rapidité de chargement du site et des différentes pages
+                <br />• Design du site et couleurs utilisées
+                <br />• Lisibilité du texte
+                <br />• Rapidité de chargement des illustrations
+            </p>
+<br />
+<br />
+<hr id="SPEECH"/>
+<br />
+<br />
+<h2>Réaliser un pitch du projet</h2>
+        <p class="p"><em> Celui-ci doit durer 5-6 minutes maximums. Vous serez noté sur (Faible 1, Bien 3, Très bien 5)</em></p>
+<br /><br />
+<p class="p"><u><b>La créativité :</b></u>
+                <br />• Originalité de l’idée
+                <br />• Caractère innovant du projet
+           </p>
+<br />
+<p class="p"><u><b>La présentation orale :</b></u>
+                <br />• Clarté de l’expression
+                <br />• Clarté des diapos
+                <br />• Intérêt suscité
+                <br />• Aptitude à convaincre
+            </p>
+<br />
+<p class="p">
+Détail important, <b>vous n’aurez que 5h</b> de travail pour mener à bien votre projet, donc soyez organisé et assignez au plus tôt les différentes tâches aux membres de votre équipe.
+L’objectif est aussi de présenter votre projet au terme de cette journée. Et qui sait peut-être que vous serez le vainqueur de cette nouvelle édition !
+</p>
+<br />
+<br />
+<hr id="CONSEILS"/>
+<br />
+<br />
+<h2> Conseils & liens</h2>
+<br />
+<ul>
+	<li class="li">Se rapprocher de l’ergonomie d’une application mobile en intégrant l’idée d’avoir une grande surface à l’écran.
+	<li class="li">S’orienter vers le développement d’une application de type SPA (Single Page Application)</li>
+	<li class="li">Afin de tester votre application avant le déploiement sur le robot, penser à utiliser le mode « développeur » du navigateur en utilisant la vue adaptative (F12 puis Ctrl+Shit+M) pour avoir le même rendu que sur le robot.</li>
+	<li class="li">L’utilisation de framework visuels tels que bootstrap / semantic ui … sont encouragés cependant, attention au temps passé à les « customiser » pour les rendre utilisables sur grand écran.</li>
+	<li class="li">Penser avant de développer à bien effectuer des maquettes rapides à produire sur une feuille / un logiciel de dessin</li>
+<hr />
+	<li class="li">Communiquez. N'oubliez pas que vous êtes en team, donc essayez de faire transiter au maximum les informations.</li>
+	<li class="li">Profitez d'être nombreux par équipe, répartissez vous les taches pour plus d'efficacité.</li>
+	<li class="li">Pensez à bien regarder partout ! Il arrive que des flags sauvages s'évanouissent dans la nature...</li>
+	<li class="li">Prenez le temps de vous documenter, internet détient toutes les solutions à vos problèmes.</li>
+	<li class="li">N'abandonnez pas ! Vous <b>devez</b> vous creuser la tête, il est normal d'avoir du mal à résoudre certains challenges !</li>
+	<li class="li">Ne pas manger ni trop gras, ni trop sucré, ni trop salé. C'est mauvais pour la santé. Et la santé c'est important.</li>
+    </ul>
+<br id="LIENS"/>
+<div>
+	<table>
+		<tr> <th>[FRAMEWORK]</th>	<th><a href="http://getbootstrap.com/docs/4.1/getting-started/introduction/">&nbsp;&nbsp;Bootstrap</a></th>
+		<tr> <th>[FRAMEWORK]</th>	<th><a href="https://semantic-ui.com/introduction/getting-started.html">&nbsp;&nbsp;Semantic-ui</a></th>
+		<tr> <th>[FRAMEWORK]</th>	<th><a href="https://bulma.io/documentation/">&nbsp;&nbsp;Bulma</a></th>
+		<tr> <th>[FRAMEWORK]</th>	<th><a href="https://bit.ly/2LRa9ei">&nbsp;&nbsp;Font-awesome</a></th>
+		<tr> <th>[SHELL]</th>		<th><a href="https://explainshell.com/">		&nbsp;&nbsp;Help shell commands</a></th></tr>
+		<tr> <th>[SHELL]</th>		<th><a href="https://bit.ly/2JxbydP">			&nbsp;&nbsp;Basic Unix commands</a></th></tr>
+		<tr> <th>[SHELL]</th>		<th><a href="https://bit.ly/2JSrS8m">			&nbsp;&nbsp;Archive format</a></th></tr>
+		<tr> <th>[SOFT]</th>		<th><a href="http://www.openwall.com/john/">	&nbsp;&nbsp;John the ripper - Bruteforce</a></th></tr>
+		<tr> <th>[SOFT]</th>		<th><a href="https://hashcat.net/hashcat/">		&nbsp;&nbsp;Hashcat - Bruteforce</a></th></tr>
+		<tr> <th>[SOFT]</th>		<th><a href="https://www.wireshark.org/">		&nbsp;&nbsp;Wireshark - Analyse réseau</a></th></tr>
+		<tr> <th>[ASCII]</th>		<th><a href="https://www.asciitable.com/">		&nbsp;&nbsp;Table ASCII</a></th></tr>
+		<tr> <th>[CRYPTO]</th>		<th><a href="http://www.nymphomath.ch/crypto">	&nbsp;&nbsp;Techniques cryptographiques</a></th></tr>
+		<tr> <th>[GOOGLE]</th>		<th><a href="https://bit.ly/2Ntf2LU">			&nbsp;&nbsp;Recherche Google</a></th></tr>
+		<tr> <th>[WEB]</th>			<th><a href="https://bit.ly/2O3Jayv">			&nbsp;&nbsp;Beautifier</a></th></tr>
+	</table>	
+</div>
+<br />
+</body>
+
+ 

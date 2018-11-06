@@ -1,0 +1,14 @@
+-3-
+Nom :	Trad
+Flag : 	Ceci_Nest_Pas_Un_Message_Important
+Points : 150
+Catég :  
+
+### Énoncé
+
+On a trouvé un message encodé tout à fait par hasard...  
+Je voudrais pas m'avancer mais si il est encodé, c'est qu'il y a de fortes chances pour que ce soit un message important venant d'une équipe adverse...  
+
+### Tips
+
+Juste besoin d'un peu de culture générale informatique.

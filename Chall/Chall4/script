@@ -1,0 +1,7 @@
+planetes = ("mercure", "venus", "terre", "mars", "jupiter", "saturne", "uranus", "Neptune", "pluton")
+bot = "KEYLO\n"
+with open("mdp.txt", 'w') as f:
+    for l in range(31):
+        for d in planetes:
+        	for y in range(34, 36):
+                	f.write(str(l) + d + str(y) + bot)

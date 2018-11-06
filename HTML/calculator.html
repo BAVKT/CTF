@@ -1,0 +1,39 @@
+<body>
+
+<style type="text/css">
+	#y {
+	background-color: #E8E8E8;
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+    }
+    #res {color:red;}
+</style>
+
+<div id="y">
+	<p>Entrez ci-dessous le score de CTF que vous souhaitez passer sur 20.</p>
+	<input id="one" placeholder="Entre votre score">
+	<p id="res"></p>
+	<button id="btn">Calculer</button>
+</div>
+
+<script>
+document.getElementById("btn").onclick = function() {calc()};
+
+function calc() {
+	var one = +document.getElementById("one").value;
+	if (isNaN(one))
+		var res = "Merci de rentrer un nombre."
+	else if (one > 3650)
+		var res = "Nombre au delà du maximum (3650)."
+	else if (one < 0)
+		var res = "Nombre en dessous du minimunm (0)."
+	else
+		var res = one * 20 / 3650;
+    document.getElementById("res").innerHTML = res;
+}
+</script>
